@@ -23,3 +23,17 @@ ul.dropdown-menu.show{
   background-color: #f7db925c;
 }
 
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: #fff;
+}
+
