@@ -13,7 +13,12 @@
  *= require_tree .
  *= require_self
  */
- 
+@import "bootstrap";
+@import "cards";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "colors";
+
 ul.dropdown-menu.show{
     left: -50px;
 }
@@ -26,7 +31,7 @@ ul.dropdown-menu.show{
 .footer {
   position: relative;
   width: 100%;
-  background: #3586ff;
+  background: #0d6efd;
   min-height: 100px;
   display: flex;
   justify-content: center;
@@ -35,4 +40,16 @@ ul.dropdown-menu.show{
 
 .footer p {
   color: #fff;
+}
+
+.header {
+  background: url(https://cdn.pixabay.com/photo/2015/11/19/08/47/banner-1050615__340.jpg);
+  position: relative;
+  background-position: bottom center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header h2 {
+  color: #0a4396;
 }
