@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-body">
+    <section class="card text-center">
+       <%=simple_form_for @card do |f| %>
+        <div class="card-body form-input mb-3 ">
+          <%= f.error_notification %>
+          <%= f.input :title, required: true %>
+          <%= f.input :description, required: true %>
+          <%= f.input :category, as: :radio_buttons, collection: Card::categories.keys %>
+          <%= f.input :currency,  as: :radio_buttons, collection: Card::currencies.keys %>
+         </div>
+        <div class="row mb-3">
+          <div class="col-sm-9 offset-sm-3">
+            <%= f.button :submit, class: "btn-primary" %>
+            <%= link_to "Back", root_path, class: "btn btn-secondary" %>
+        </div>
+        <%end%>
+    </section>
+  </div>
+</div>
