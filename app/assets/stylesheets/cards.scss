@@ -1,0 +1,19 @@
+// Place all the styles related to the Cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "colors";
+
+.boards {
+  color: $text_color;
+
+  .card {
+    background-color: #63befc;
+    box-shadow: 10px 10px 20px #0a4396;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    }
+  }
+}
