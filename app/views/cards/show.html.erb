@@ -1,0 +1,65 @@
+<%= render "shared/header", content: "#{@card.title}" %>
+<div class="container">
+  <div class="boards">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="icon-group">
+          <%= link_to "Edit", edit_card_path, class: "btn btn-outline-success mx-1" %>
+          <%= link_to "Delete", card_path, method: :delete, class: "btn btn-outline-danger mx-1", data: { confirm: "Are you sure?" } %>
+          <%= link_to "Go back", @card, class: "btn btn-outline-info mx-1" %>
+        </div>
+      </div>
+    </div>
+    <% if @cards.present? %>
+      <div class="row">
+        <% @cards.each do |card| %>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <%= @card.ttile.upcase %>
+                  </div>
+                  <div>
+                    <%= link_to icon('fas', 'pen-square'), "#", class: 'mx-1' %>
+                    <%= link_to icon('fas', 'trash-alt'), "#",  method: :delete, data: { confirm: "Are you sure?" } %>
+                  </div>
+                </div>
+              <div class="card-footer">
+                <%= link_to "Add new item","#" %>
+              </div>
+             </div>
+            </div>
+          </div>
+        <% end %>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="create-card">
+                <div class="card">
+                  <div class="card-headerа">
+                    <div>
+                      add new cardsss
+                      <%= link_to "", new_card_path(@card), class: "stretched-link" %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    <% else %>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="create-card">
+            <div class="card">
+              <div class="card-header">
+                  add new Item
+                <%= link_to "", "#", class: "stretched-link" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
