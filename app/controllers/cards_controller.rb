@@ -16,6 +16,7 @@ class CardsController < ApplicationController
 
   def create
     @card = collection.build(card_params)
+    flash[:notice] = "Card has been create"
 
     if @card.save
       redirect_to root_path
