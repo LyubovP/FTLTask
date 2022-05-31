@@ -4,6 +4,7 @@
       <%= f.error_notification %>
       <%= f.input :title, required: true %>
       <%= f.input :price, required: true %>
+      <%= f.input :category, as: :radio_buttons, collection: Item::categories.keys %>
      </div>
     <div class="row mb-3">
       <div class="col-sm-9 offset-sm-3">
