@@ -1,8 +1,13 @@
 class CardsController < ApplicationController
   before_action :authenticate_user!
-  before_action :find_card, except: [:index, :new, :create, :search]
+  before_action :find_card, only: [:show, :edit, :update, :destroy]
+  
+  def index
+    @cards = current_user.cards
+  end
   
   def show
+    @item = @card.items.build
   end
   
   def new
@@ -48,5 +53,9 @@ class CardsController < ApplicationController
 
   def card_params
     params.require(:card).permit(:title, :description, :category, :currency)
+  end
+  
+  def item_collection
+    find_card.items
   end
 end
