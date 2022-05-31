@@ -21,6 +21,7 @@ class ItemsController < ApplicationController
     
   def create
     @item = @card.items.build(item_params)
+    flash[:notice] = "item has been create"
 
     if @item.save
       redirect_to(@item.card)
@@ -34,6 +35,7 @@ class ItemsController < ApplicationController
 
   def update
     if @item.update(item_params)
+      flash[:notice] = "Item has been update"
       redirect_to(@item.card)
     else
       render :edit
@@ -42,6 +44,7 @@ class ItemsController < ApplicationController
 
   def destroy
     redirect_to @card if @item.destroy
+    flash[:notice] = "Item has been deleted"
   end
 
   private
