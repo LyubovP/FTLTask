@@ -5,6 +5,7 @@
 
 //= require popper
 //= require bootstrap-sprockets
+//= require social-share-button
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"

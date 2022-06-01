@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require social-share-button
  */
 @import "bootstrap";
 @import "cards";
@@ -19,6 +20,7 @@
 @import "font-awesome";
 @import "colors";
 @import "items";
+@import "social-share-button";
 
 ul.dropdown-menu.show{
     left: -50px;
@@ -59,4 +61,14 @@ ul.dropdown-menu.show{
 .alert {
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+$size: 24px;
+
+.social-share-button {
+  .ssb-icon {
+    background-size: $size $size;
+    height: $size;
+    width: $size;
+  }
 }

@@ -31,6 +31,7 @@ gem 'devise'
 gem 'bootstrap', '~> 5.1.0'
 gem 'simple_form'
 gem 'font-awesome-sass'
+gem 'social-share-button'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
