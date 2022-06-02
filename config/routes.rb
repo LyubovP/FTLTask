@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :cards do
     resources :items
   end
+  get "/help", to: "help#help"
 end
