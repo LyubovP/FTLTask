@@ -13,6 +13,7 @@ import "channels"
 
 import * as bootstrap from 'bootstrap'
 import "../stylesheets/application"
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 Rails.start()
 Turbolinks.start()

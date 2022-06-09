@@ -31,7 +31,7 @@
             <div class="input-group">
               <%= f.text_field :title, class: 'form-control', placeholder: 'Enter item title...' %>
               <%= f.text_field :price, class: 'form-control', placeholder: 'Enter price...' %>
-              <%= f.select(:category, Item::categories) %>
+              <%= f.select :category, Item::categories.keys %>
               <div class="input-group-append">
                 <%= f.submit class: 'btn btn-primary' %>
               </div>
