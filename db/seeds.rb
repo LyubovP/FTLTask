@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "factory_bot_rails"
 
-FactoryBot.create_list(:user, 30)
+FactoryBot.create_list(:item, 30)

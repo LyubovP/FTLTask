@@ -8,9 +8,6 @@ class ItemsController < ApplicationController
   end
 
   def show
-    #@item = current_user.items.find(params[:id])
-    #@card =current_user.cards.find(params[:card_id])
-    # @user_email = @card.users.find(@item.user_id).email
   end
 
   def new
@@ -29,9 +26,7 @@ class ItemsController < ApplicationController
       flash[:error] = @item.errors.full_messages[0]
       render :new
     end
-  end
-
-  
+  end  
 
   def update
     if @item.update(item_params)
