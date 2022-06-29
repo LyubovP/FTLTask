@@ -9,18 +9,13 @@
     "@rails/webpacker": "5.4.3",
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.8.3",
-    "glob-parent": "^5.1.2",
-    "jquery": "^3.6.0",
-    "node-sass": "^7.0.1",
-    "nth-check": "^2.1.1",
-    "popper.js": "^1.16.1",
     "turbolinks": "^5.2.0",
     "webpack": "^5.73.0",
-    "yarn": "^1.22.17"
+    "yarn": "^1.22.17",
+    "webpack-cli": "^4.10.0"
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^4.9.2"
   },
   "engines": {
