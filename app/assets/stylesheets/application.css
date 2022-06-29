@@ -14,12 +14,6 @@
  *= require_self
  */
 
-
-@import "cards";
-@import "items";
-@import "colors";
-@import "help";
-
 ul.dropdown-menu.show{
     left: -90px;
 }
