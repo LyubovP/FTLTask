@@ -11,8 +11,8 @@
     "bootstrap-icons": "^1.8.3",
     "turbolinks": "^5.2.0",
     "webpack": "^5.73.0",
-    "yarn": "^1.22.17",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "yarn": "^1.22.17"
   },
   "version": "0.1.0",
   "devDependencies": {
