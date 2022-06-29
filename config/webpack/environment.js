@@ -4,4 +4,4 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']  //Working
   }
-}
+ }; environment
