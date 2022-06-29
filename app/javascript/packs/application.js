@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 
 //= require popper
+//= require bootstrap-sprockets
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
